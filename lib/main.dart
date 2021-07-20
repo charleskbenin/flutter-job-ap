@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'models/cate_model.dart';
 import 'screens/homePage.dart';
+import 'screens/profile.dart';
 import 'screens/signIn.dart';
 import 'screens/signUp.dart';
 
@@ -17,7 +18,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
 
-      home: NavBar()
+      home: ProfilePage()
+      // NavBar()
       // HomePage()
       // SignIn()
       // SignUp(),
