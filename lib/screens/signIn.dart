@@ -24,7 +24,7 @@ class _SignInState extends State<SignIn> {
                         fontWeight: FontWeight.bold,
                         fontSize: 26, color: Color(0xff005682)),),
 
-                  subtitle: Text('Sign up now to get started',
+                  subtitle: Text('Sign in now to get started',
                     style: TextStyle(
                         fontFamily: 'Sora, Regular',
                         fontWeight: FontWeight.normal,
@@ -72,28 +72,15 @@ class _SignInState extends State<SignIn> {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
-                              Text('Forgot Password?'),
+                              Text('Forgot Password?', style: TextStyle(color: Color(0xff005682)),),
                             ],
                           )
                       ),
-
-                      // SizedBox(height: 10,),
-
-                      // TextField(
-                      //   // textAlign: TextAlign.end,
-                      //   decoration: InputDecoration(
-                      //       border: OutlineInputBorder(
-                      //         // borderRadius: BorderRadius.
-                      //       ),
-                      //       hintText: 'Confirm Password',
-                      //       suffixIcon: Icon(Icons.visibility_off)
-                      //
-                      //   ),
-                      // ),
                       SizedBox(height: 20,),
-
                       ElevatedButton(
-                          style: ElevatedButton.styleFrom(),
+                          style: ElevatedButton.styleFrom(
+                              primary: Color(0xff005682)
+                          ),
                           onPressed: (){},
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -110,7 +97,7 @@ class _SignInState extends State<SignIn> {
                           Text("Don't have an account?"),
                           TextButton(
                               onPressed: (){},
-                              child: Text('Sign Up Here')
+                              child: Text('Sign Up Here', style: TextStyle(color: Color(0xff005682)),)
                           )
                         ],
                       )

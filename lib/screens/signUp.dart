@@ -71,8 +71,9 @@ class _SignUpState extends State<SignUp> {
                     SizedBox(height: 20,),
 
                     ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                      ),
+                        style: ElevatedButton.styleFrom(
+                            primary: Color(0xff005682)
+                        ),
                         onPressed: (){},
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -82,6 +83,7 @@ class _SignUpState extends State<SignUp> {
                           ],
                         )
                     ),
+
                     SizedBox(),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -89,7 +91,7 @@ class _SignUpState extends State<SignUp> {
                         Text('Already have an account?'),
                         TextButton(
                             onPressed: (){},
-                            child: Text('Sign In Here')
+                            child: Text('Sign In Here', style: TextStyle(color: Color(0xff005682)),)
                         )
                       ],
                     )

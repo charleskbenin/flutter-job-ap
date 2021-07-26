@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 import 'models/cate_model.dart';
+import 'screens/checkMail.dart';
+import 'screens/createPassword.dart';
+import 'screens/forgotPass.dart';
 import 'screens/homePage.dart';
 import 'screens/profile.dart';
 import 'screens/signIn.dart';
@@ -18,7 +21,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
 
-      home: ProfilePage()
+      home:
+      // CheckMail()
+      CreatePassword()
+      // ForgotPassword()
+      // ProfilePage()
       // NavBar()
       // HomePage()
       // SignIn()
